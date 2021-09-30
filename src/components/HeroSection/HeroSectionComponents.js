@@ -1,24 +1,13 @@
 import styled from 'styled-components';
 
 export const HeroContainer = styled.div`
-    background: #0c0c0c;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0 30px;
-    height: 100vh;
+    height: 80vh;
     position: relative;
     z-index: 1;
-
-    :before {
-        content: '';
-        position:absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: linear-gradient(180deg, rgba(0,0,0,0.2), 0%, rbga(0,0,0,0.6), 100%), linear-gradient(180deg, rgba(0,0,0,0.2), 0%, transparent(100%));
-    }
     `
 
 export const HeroBg = styled.div`
@@ -52,17 +41,35 @@ export const HeroContent = styled.div`
 `
 
 export const HeroH1 = styled.h1`
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+
     color: #fff;
     font-size: 48px;
     text-align: center;
 
+    @keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        matrix3d(1, 0, 0, 0, 0, 0, 1, 0, 0, -1, 0, 0, 0, -100, -100, 1);
+        transform-origin: 50% 50% 0px;
+        }   
+    100% {
+        opacity: 1;
+        matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+        
+        }
+    }
+
     @media screen and (max-width: 768px){
-        front-size: 40px;
+        font-size: 30px;
 
     }
 
     @media screen and (max-width: 480px){
-        front-size: 32px;
+        font-size: 25px;
     }
 `
 
@@ -74,12 +81,12 @@ export const HeroP = styled.p`
     max-width: 600px;
 
     @media screen and (max-width: 768px){
-        front-size: 20x;
+        font-size: 20x;
 
     }
 
     @media screen and (max-width: 480px){
-        front-size: 18px;
+        font-size: 18px;
     }
 `
 

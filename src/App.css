@@ -7,4 +7,9 @@
 
 body {
   background-color: #0e1212;
+  min-height: 100vh;
+  display: block;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }

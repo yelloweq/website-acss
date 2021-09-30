@@ -6,7 +6,7 @@ function HeroSection() {
     return (
         <HeroContainer>
             <HeroBg>
-                <HeroVideo autoPlay loop muted src={Video} type='video/mp4' />
+                {/* <HeroVideo autoPlay loop muted src={Video} type='video/mp4' /> */}
             </HeroBg>
             <HeroContent>
                 <HeroH1>Objectively, The Best Aston Society.</HeroH1>

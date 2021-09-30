@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { FaBars } from 'react-icons/fa';
-import { IoLogoFacebook } from 'react-icons/io5';
+import { IoLogoFacebook, IoEllipsisVertical } from 'react-icons/io5';
 import { GrInstagram } from 'react-icons/gr'
 import {
     Nav,
@@ -13,7 +12,7 @@ import {
     NavSocialLinks,
 } from './NavbarComponents';
 
-function Navbar({ toggle }) {
+function Navbar({ toggle, isOpen }) {
 
     const [hover, setHover] = useState(false);
 
@@ -27,8 +26,8 @@ function Navbar({ toggle }) {
                 <NavLogo to="/">
                     .acss()
                 </NavLogo>
-                <MobileIcon onClick={toggle}>
-                    <FaBars />
+                <MobileIcon onClick={toggle} isOpen={isOpen}>
+                    <IoEllipsisVertical size="30" />
                 </MobileIcon>
                 <NavMenu>
                     <NavItem>
@@ -52,8 +51,8 @@ function Navbar({ toggle }) {
                     </NavItem>
 
                 </NavMenu>
-            </NavbarContainer>
-        </Nav>
+            </NavbarContainer >
+        </Nav >
     )
 }
 

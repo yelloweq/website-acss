@@ -1,11 +1,13 @@
 import React from 'react';
-import { SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink } from './SidebarComponents';
+import { IoLogoFacebook } from 'react-icons/io5';
+import { GrInstagram } from 'react-icons/gr';
+import { SidebarContainer, Icon, SidebarWrapper, SidebarMenu, SidebarLink, SideBarSocialLink } from './SidebarComponents';
 
 function Sidebar({ isOpen, toggle }) {
     return (
         <SidebarContainer isOpen={isOpen} onClick={toggle}>
             <Icon onClick={toggle}>
-                <CloseIcon />
+                ✕
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
@@ -18,9 +20,17 @@ function Sidebar({ isOpen, toggle }) {
                     <SidebarLink to="events" onClick={toggle}>
                         .events()
                     </SidebarLink>
+                    <SideBarSocialLink href="https://www.facebook.com/AstonCSS/" >
+                        <IoLogoFacebook size="50" />
+                    </SideBarSocialLink>
+
+                    <SideBarSocialLink href="https://www.instagram.com/astoncomputersciencesociety/?hl=en">
+                        <GrInstagram size="50" />
+                    </SideBarSocialLink>
                 </SidebarMenu>
             </SidebarWrapper>
         </SidebarContainer>
+
     )
 }
 
