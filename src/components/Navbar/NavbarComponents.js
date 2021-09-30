@@ -19,9 +19,11 @@ export const Nav = styled.nav`
 `
 export const NavbarContainer = styled.div`
     display:flex;
+    align-items: top;
+
     justify-content: space-between;
     height: 48px;
-    padding: 0 24px;
+    padding: 5px 25px;
     width: 100%;
     max-width: 1100px;
     z-index: 1;
@@ -31,10 +33,11 @@ export const NavLogo = styled(LinkRouter)`
     color: #3399FF;
     justify-self: flex-start;
     cursor: pointer;
-    font-size: 1.25rem;
+    font-size: 1rem;
     display: flex;
-    align-items: top;
-    margin-left: 24px;
+    // align-items: center;
+    align-content: top;
+    margin-left: 25px;
     font-weight: 700;
     text-decoration: none;
     z-index: 999;
@@ -58,10 +61,10 @@ export const MobileIcon = styled.div`
 
 export const NavMenu = styled.ul`
     display: flex;
-    align-items: center;
+    align-items: top;
     list-style: none;
     text-align: center;
-    margin-right: 24px;
+    margin-right: 25px;
     
     @media screen and (max-width: 786px){
         display: none;
@@ -70,6 +73,7 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
     height: 32px;
+    justify-content: center;
 
     &:hover {
         color: #3399FF
@@ -83,6 +87,7 @@ export const NavLinks = styled(LinkScroll)`
     font-weight: 400;
     display: flex;
     align-items: center;
+    justify-content: center;
     text-decoration: none;
     margin-left: 1rem;
 
@@ -95,5 +100,20 @@ export const NavLinks = styled(LinkScroll)`
     }
     &:active {
         color: #dbdbdb;
+    }
+`
+
+export const NavSocialLinks = styled.a`
+    color: #3399FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+    cursor: pointer;
+
+    &:hover {
+        color: #d;
+        transition: 500ms ease-in-out;
+
     }
 `

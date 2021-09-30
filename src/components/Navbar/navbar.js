@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { FaBars } from 'react-icons/fa';
+import { IoLogoFacebook } from 'react-icons/io5';
+import { GrInstagram } from 'react-icons/gr'
 import {
     Nav,
     NavbarContainer,
@@ -7,7 +9,8 @@ import {
     MobileIcon,
     NavMenu,
     NavItem,
-    NavLinks
+    NavLinks,
+    NavSocialLinks,
 } from './NavbarComponents';
 
 function Navbar({ toggle }) {
@@ -36,6 +39,16 @@ function Navbar({ toggle }) {
                     </NavItem>
                     <NavItem>
                         <NavLinks to="join" onMouseEnter={onHover} onMouseLeave={onHover}>.join()</NavLinks>
+                    </NavItem>
+                    <NavItem>
+                        <NavSocialLinks href="https://www.facebook.com/AstonCSS/" onMouseEnter={onHover} onMouseLeave={onHover}>
+                            <IoLogoFacebook size="20" />
+                        </NavSocialLinks>
+                    </NavItem>
+                    <NavItem>
+                        <NavSocialLinks href="https://www.instagram.com/astoncomputersciencesociety/?hl=en" onMouseEnter={onHover} onMouseLeave={onHover}>
+                            <GrInstagram size="20" />
+                        </NavSocialLinks>
                     </NavItem>
 
                 </NavMenu>
