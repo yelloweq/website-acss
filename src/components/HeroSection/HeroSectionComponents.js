@@ -2,9 +2,9 @@ import styled from 'styled-components';
 
 export const HeroContainer = styled.div`
     display: flex;
-    justify-content: center;
+    margin-left: 20rem;
+    justify-content: left;
     align-items: center;
-    padding: 0 30px;
     height: 80vh;
     position: relative;
     z-index: 1;
@@ -36,7 +36,7 @@ export const HeroContent = styled.div`
     padding: 8px 24px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
 
 `
 
@@ -46,9 +46,9 @@ export const HeroH1 = styled.h1`
     animation-fill-mode: forwards;
 
 
-    color: #fff;
-    font-size: 48px;
-    text-align: center;
+    color: #3399FF;
+    font-size: 40px;
+    text-align: start;
 
     @keyframes fadeInAnimation {
     0% {
@@ -76,17 +76,17 @@ export const HeroH1 = styled.h1`
 export const HeroP = styled.p`
     margin-top: 24px;
     color: #fff;
-    font-size: 24px;
-    text-align: center;
+    font-size: 20px;
+    text-align: start;
     max-width: 600px;
 
     @media screen and (max-width: 768px){
-        font-size: 20x;
+        font-size: 18x;
 
     }
 
     @media screen and (max-width: 480px){
-        font-size: 18px;
+        font-size: 16px;
     }
 `
 

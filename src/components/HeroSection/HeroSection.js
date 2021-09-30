@@ -9,7 +9,7 @@ function HeroSection() {
                 {/* <HeroVideo autoPlay loop muted src={Video} type='video/mp4' /> */}
             </HeroBg>
             <HeroContent>
-                <HeroH1>Objectively, The Best Aston Society.</HeroH1>
+                <HeroH1>acss.whois()</HeroH1>
                 <HeroP>
                     We host tons of events with free food, have our own kick-ass room, and super friendly people!
                 </HeroP>
