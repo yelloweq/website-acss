@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const HeroContainer = styled.div`
     display: block;
     margin-left: 20%;
+    margin-bottom: 40rem;
     justify-content: left;
     flex-direction: column;
     height: 80vh;
@@ -92,4 +93,5 @@ export const HeroP = styled.p`
         font-size: 16px;
     }
 `
+
 

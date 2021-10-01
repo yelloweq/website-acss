@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar/Navbar.js';
 import Sidebar from '../components/Sidebar/Sidebar.js';
 
 
+
 function Home() {
 
     const [isOpen, setIsOpen] = useState(false);
@@ -29,6 +30,36 @@ function Home() {
                 SpanText="The Finest Aston Society"
             >
                 We host tons of events with free food, have our own kick-ass room, and super friendly people!
+            </HeroSection>
+
+            <HeroSection
+                title="acss"
+                titleColor="#fff"
+                titleSize="50px"
+                suffix=".events()"
+                suffixColor="#3399FF"
+                suffixSize="50px"
+                SpanStyle="italics"
+            // SpanColor="#EEE8A9"
+            // SpanSize="20px"
+            // SpanText=""
+            >
+                SPACE FOR EVENT COMPONENT
+            </HeroSection>
+
+            <HeroSection
+                title="acss"
+                titleColor="#fff"
+                titleSize="50px"
+                suffix=".join()"
+                suffixColor="#3399FF"
+                suffixSize="50px"
+                SpanStyle="italics"
+            // SpanColor="#EEE8A9"
+            // SpanSize="20px"
+            // SpanText=""
+            >
+                SPACE FOR JOIN COMPONENT
             </HeroSection>
         </>
     )
