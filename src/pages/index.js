@@ -16,7 +16,20 @@ function Home() {
         <>
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar isOpen={isOpen} toggle={toggle} />
-            <HeroSection />
+            <HeroSection
+                title="acss"
+                titleColor="#fff"
+                titleSize="50px"
+                suffix=".whois()"
+                suffixColor="#3399FF"
+                suffixSize="50px"
+                SpanStyle="italics"
+                SpanColor="#EEE8A9"
+                SpanSize="20px"
+                SpanText="The Finest Aston Society"
+            >
+                We host tons of events with free food, have our own kick-ass room, and super friendly people!
+            </HeroSection>
         </>
     )
 }

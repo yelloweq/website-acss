@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 
 export const HeroContainer = styled.div`
-    display: flex;
-    margin-left: 20rem;
+    display: block;
+    margin-left: 20%;
     justify-content: left;
-    align-items: center;
+    flex-direction: column;
     height: 80vh;
     position: relative;
+    top: 200px;
     z-index: 1;
     `
 
@@ -21,34 +22,29 @@ export const HeroBg = styled.div`
     overflow: hidden;
 `
 
-export const HeroVideo = styled.video`
-    width:100;
-    height: 100%;
-    -o-object-fit: cover;
-    object-fit: covered;
-    background: #232a34;
-`
-
 export const HeroContent = styled.div`
     z-index: 3;
     max-width: 100%;
     position: absolute;
-    padding: 8px 24px;
     display: flex;
-    flex-direction: column;
     align-items: left;
+    flex-direction: column;
 
 `
 
 export const HeroH1 = styled.h1`
+    display: inline-block;
+    // margin-right: -8px;
+    // letter-spacing: -0.05rem;
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 
 
-    color: #3399FF;
-    font-size: 40px;
+    color: ${(props => props.color)};
+    font-size: ${(props => props.size)};
     text-align: start;
+    font-weight:  700;
 
     @keyframes fadeInAnimation {
     0% {
@@ -72,7 +68,14 @@ export const HeroH1 = styled.h1`
         font-size: 25px;
     }
 `
+export const HeroSpan = styled.span`
+    font-style: ${props => props.SpanStyle};
+    color: ${props => props.SpanColor};
+    font-size: ${props => props.spanSize};
+    width: 100%;
 
+
+`
 export const HeroP = styled.p`
     margin-top: 24px;
     color: #fff;

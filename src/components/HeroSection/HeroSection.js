@@ -1,19 +1,16 @@
 import React from 'react';
-import Video from '../../resources/videos/video.mp4';
-import { HeroContainer, HeroBg, HeroVideo, HeroContent, HeroH1, HeroP } from './HeroSectionComponents.js'
+import { HeroContainer, HeroBg, HeroContent, HeroH1, HeroSpan, HeroP } from './HeroSectionComponents.js'
 
-function HeroSection() {
+function HeroSection(props) {
     return (
         <HeroContainer>
-            <HeroBg>
-                {/* <HeroVideo autoPlay loop muted src={Video} type='video/mp4' /> */}
-            </HeroBg>
+            <HeroBg bgColor={props.bg} />
+            <HeroH1 color={props.titleColor} size={props.titleSize}>{props.title}</HeroH1><HeroH1 color={props.suffixColor} size={props.suffixSize}>{props.suffix}</HeroH1>
             <HeroContent>
-                <HeroH1>acss.whois()</HeroH1>
+                <HeroSpan SpanColor={props.SpanColor} SpanStyle={props.SpanStyle} spanSize={props.spanSize}>{props.SpanText}</HeroSpan>
                 <HeroP>
-                    We host tons of events with free food, have our own kick-ass room, and super friendly people!
+                    {props.children}
                 </HeroP>
-
             </HeroContent>
         </HeroContainer>
     )
