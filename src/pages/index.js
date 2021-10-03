@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import HeroSection from '../components/HeroSection/HeroSection.js';
 import Navbar from '../components/Navbar/Navbar.js';
 import Sidebar from '../components/Sidebar/Sidebar.js';
+import Card from '../components/Card/Card.js';
+import image from '../resources/images/card.png';
 
 
 
@@ -28,8 +30,9 @@ function Home() {
                 SpanColor="#EEE8A9"
                 SpanSize="20px"
                 SpanText="The Finest Aston Society"
+                pContent="We host tons of events with free food, have our own kick-ass room, and super friendly people!"
             >
-                We host tons of events with free food, have our own kick-ass room, and super friendly people!
+                
             </HeroSection>
 
             <HeroSection
@@ -44,7 +47,10 @@ function Home() {
             // SpanSize="20px"
             // SpanText=""
             >
-                SPACE FOR EVENT COMPONENT
+                <Card title="card" date="12/06/21" img={image} >
+                    card content
+                </Card>
+                
             </HeroSection>
 
             <HeroSection
@@ -59,7 +65,6 @@ function Home() {
             // SpanSize="20px"
             // SpanText=""
             >
-                SPACE FOR JOIN COMPONENT
             </HeroSection>
         </>
     )
