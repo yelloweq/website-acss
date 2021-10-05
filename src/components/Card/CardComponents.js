@@ -1,17 +1,21 @@
 import styled from 'styled-components';
 
 export const CardContainer = styled.div`
-    display: block;
-    position: relative;
-    top: 3rem;
+    display: flex;
+    position: absolute;
+    top: 7rem;
     width: 300px;
     height: 500px;
     background: #fff;
-    position: relative;
     overflow: hidden;
     border-radius: 5px; 
     box-shadow: -5px 10px 26px -15px rgba(219, 219, 219, 0.8);
-
+    transition: all 200ms ease-in-out;
+     
+    @media screen and (max-width: 768px){
+        width: 280px;
+        top: 6rem;
+    }
 
 `
 
@@ -20,6 +24,10 @@ export const CardTitle = styled.h2`
     color: #3399ff;
     font-weight: 700;
     margin-bottom: 2rem;
+
+    @media screen and (max-width: 768px){
+        font-size: 24px;
+    }
 
 `
 
@@ -40,8 +48,10 @@ export const CardContent = styled.div`
     left:0;
     height: calc(100% - 200px);
     width: 100%
-    
 
+    @media screen and (max-width: 768px){
+       height: calc(100% - 180px);
+    }
 `
 
 export const CardImage = styled.img`
@@ -54,4 +64,5 @@ export const ImageContainer = styled.div`
     height: 200px;
     width: 100%;
     overflow: hidden;
+
 `
