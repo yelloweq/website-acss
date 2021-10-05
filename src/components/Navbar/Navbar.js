@@ -37,13 +37,13 @@ function Navbar({ toggle, isOpen }) {
                 </MobileIcon>
                 <NavMenu>
                     <NavItem>
-                        <NavLinks to="about" onMouseEnter={onHover} onMouseLeave={onHover}>.about()</NavLinks>
+                        <NavLinks to="about" spy={true} smooth={true} duration={500} offset={-48} onMouseEnter={onHover} onMouseLeave={onHover}>.about()</NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to="events" onMouseEnter={onHover} onMouseLeave={onHover}>.events()</NavLinks>
+                        <NavLinks to="events" spy={true} smooth={true} duration={500} offset={-48} onMouseEnter={onHover} onMouseLeave={onHover}>.events()</NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to="join" onMouseEnter={onHover} onMouseLeave={onHover}>.join()</NavLinks>
+                        <NavLinks to="join" spy={true} smooth={true} duration={500} offset={-48} onMouseEnter={onHover} onMouseLeave={onHover}>.join()</NavLinks>
                     </NavItem>
                     <NavItem>
                         <NavSocialLinks href="https://www.facebook.com/AstonCSS/" onMouseEnter={onHover} onMouseLeave={onHover}>

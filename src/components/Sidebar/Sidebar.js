@@ -12,13 +12,13 @@ function Sidebar({ isOpen, toggle }) {
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarLink to="join" onClick={toggle}>
+                    <SidebarLink to="join" onClick={toggle} spy={true} smooth={true} duration={500} offset={-48}>
                         .join()
                     </SidebarLink>
-                    <SidebarLink to="about" onClick={toggle}>
+                    <SidebarLink to="about" onClick={toggle} spy={true} smooth={true} duration={500} offset={-48}>
                         .about()
                     </SidebarLink>
-                    <SidebarLink to="events" onClick={toggle}>
+                    <SidebarLink to="events" onClick={toggle} spy={true} smooth={true} duration={500} offset={-48}>
                         .events()
                     </SidebarLink>
                     <SideBarSocialLink href="https://www.facebook.com/AstonCSS/" >

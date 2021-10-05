@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Link as LinkRouter } from 'react-router-dom'
+import { Link as LinkRouter } from 'react-router-dom';
 import { Link as LinkScroll } from 'react-scroll';
 
 export const Nav = styled.nav`
@@ -98,9 +98,7 @@ export const NavLinks = styled(LinkScroll)`
         transition: 500ms ease-in-out;
 
     }
-    &:active {
-        color: #dbdbdb;
-    }
+   
 `
 
 export const NavSocialLinks = styled.a`
