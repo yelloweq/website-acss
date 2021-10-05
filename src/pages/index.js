@@ -31,6 +31,7 @@ function Home() {
                     SpanColor="#EEE8A9"
                     SpanSize="20px"
                     SpanText="The Finest Aston Society"
+                    pContent="We host tons of events with free food, have our own kick-ass room, and super friendly people!"
                 >
 
                     <TextBox>
@@ -65,12 +66,7 @@ function Home() {
 
 
                     </Card>
-                    <Card title="Aston Hack" date="12/11/21" img={image} >
-                        Hackathons are invention marathons where attendees dream up and bring to life ideas for apps, websites, robots, and more.
-                        We are inviting students to join us for 24 hours while we develop the ideas for the future!
-
-
-                    </Card>
+                    
                     
                 </HeroSection>
             </section>

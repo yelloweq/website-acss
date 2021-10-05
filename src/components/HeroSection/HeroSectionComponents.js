@@ -1,19 +1,16 @@
 import styled from 'styled-components';
 
 export const HeroContainer = styled.div`
-    display: flex;
+    display: block;
     margin-left: 20%;
     margin-right: 20%;
     margin-bottom: 40rem;
+    justify-content: left;
+    flex-direction: column;
     height: 50vh;
     position: relative;
     top: 200px;
     z-index: 1;
-    max-height: max-content;
-    @media screen and (max-width: 768px){
-        margin-left: 5%;
-        margin-right: 5%;
-    }
     `
 
 export const HeroBg = styled.div`
@@ -28,33 +25,19 @@ export const HeroBg = styled.div`
 `
 
 export const HeroContent = styled.div`
-    z-index: 6;
-    max-width: 100vw;
+    z-index: 3;
+    max-width: 100%;
     position: absolute;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 4rem;
-    min-width: 90vw;
-    min-height:50vh;
-    max-height: max-content;
-    @media screen and (max-width: 768px){
-        top: 3rem;
-    }
-
-    @media screen and (max-width: 480px){
-        top: 2rem;
-    }
-
+    align-items: left;
+    flex-direction: column;
 
 `
 
 export const HeroH1 = styled.h1`
-    display: inline-flex;
-    top: 0;
-    width: max-content;
-    height: max-content;
+    display: inline-block;
     margin-bottom: 0.5rem;
+    // letter-spacing: -0.05rem;
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -64,6 +47,19 @@ export const HeroH1 = styled.h1`
     font-size: ${(props => props.size)};
     text-align: start;
     font-weight:  700;
+
+    @keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        matrix3d(1, 0, 0, 0, 0, 0, 1, 0, 0, -1, 0, 0, 0, -100, -100, 1);
+        transform-origin: 50% 50% 0px;
+        }   
+    100% {
+        opacity: 1;
+        matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+        
+        }
+    }
 
     @media screen and (max-width: 768px){
         font-size: 30px;
@@ -75,24 +71,29 @@ export const HeroH1 = styled.h1`
     }
 `
 export const HeroSpan = styled.span`
-    position: absolute;
-    display:flex;
-    left: 0;
-    top: 4rem;
-    text-align: start;
-    width: 80vw;
-    height: max-content;
     font-style: ${props => props.SpanStyle};
     color: ${props => props.SpanColor};
     font-size: ${props => props.spanSize};
+    width: 100%;
     margin-bottom: 0.5rem;
     
+
+`
+export const HeroP = styled.p`
+    margin-top: 24px;
+    color: #fff;
+    font-size: 20px;
+    text-align: start;
+    max-width: 600px;
+
     @media screen and (max-width: 768px){
-        top: 3rem;
+        font-size: 18x;
+
     }
 
     @media screen and (max-width: 480px){
-        top: 2.5rem;
+        font-size: 16px;
     }
-
 `
+
+
