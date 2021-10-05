@@ -10,7 +10,9 @@ function HeroSection(props) {
                 <HeroSpan SpanColor={props.SpanColor} SpanStyle={props.SpanStyle} spanSize={props.spanSize}>{props.SpanText}</HeroSpan>
                 <HeroP pContent={props.pContent} />
             </HeroContent>
+        
             {props.children}
+
         </HeroContainer>
     )
 }
