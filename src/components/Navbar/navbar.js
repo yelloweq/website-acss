@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { IoLogoFacebook, IoEllipsisVertical } from 'react-icons/io5';
 import { FaDiscord } from "react-icons/fa";
-import { GrInstagram, GrTwitter } from 'react-icons/gr';
-import { animateScroll as scroll } from 'react-scroll';
+import { GrInstagram, GrTwitter } from 'react-icons/gr'
 import {
     Nav,
     NavbarContainer,
@@ -16,21 +15,16 @@ import {
 
 function Navbar({ toggle, isOpen }) {
 
-
     const [hover, setHover] = useState(false);
 
     const onHover = () => {
         setHover(!hover);
     }
 
-    const toggleHome = () => {
-        scroll.scrollToTop();
-    }
-
     return (
         <Nav>
             <NavbarContainer>
-                <NavLogo to="/" onClick={toggleHome}>
+                <NavLogo to="/">
                     .acss()
                 </NavLogo>
                 <MobileIcon onClick={toggle} isOpen={isOpen}>
