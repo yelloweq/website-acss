@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { IoLogoFacebook, IoEllipsisVertical } from 'react-icons/io5';
 import { FaDiscord } from "react-icons/fa";
-import { GrInstagram } from 'react-icons/gr'
+import { GrInstagram, GrTwitter } from 'react-icons/gr'
 import {
     Nav,
     NavbarContainer,
@@ -50,7 +50,11 @@ function Navbar({ toggle, isOpen }) {
                             <GrInstagram size="20" />
                         </NavSocialLinks>
                     </NavItem>
-
+                    <NavItem>
+                        <NavSocialLinks href="https://twitter.com/astoncss?lang=en" onMouseEnter={onHover} onMouseLeave={onHover}>
+                            <GrTwitter size="20" />
+                        </NavSocialLinks>
+                    </NavItem>
                     <NavItem>
                         <NavSocialLinks href="https://discord.com/invite/7QgyHpYU9y" onMouseEnter={onHover} onMouseLeave={onHover}>
                             <FaDiscord size="20" />

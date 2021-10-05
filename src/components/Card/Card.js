@@ -4,17 +4,22 @@ import { CardContainer, CardTitle, CardDate, CardContent, CardImage, ImageContai
 function Card(props) {
     return (
         <CardContainer>
+
             <ImageContainer>
-            <CardImage src={props.img}/>
+                <CardImage src={props.img}/>
             </ImageContainer>
+
             <CardContent>
-            <CardDate>
-            {props.date}
-            </CardDate>
-            <CardTitle>
-                {props.title}
-            </CardTitle>
+                <CardDate>
+                    {props.date}
+                </CardDate>
+
+                <CardTitle>
+                    {props.title}
+                </CardTitle>
+
                 {props.children}
+                
             </CardContent>
         </CardContainer>
     )

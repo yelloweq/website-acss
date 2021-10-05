@@ -76,7 +76,7 @@ export const NavItem = styled.li`
     justify-content: center;
 
     &:hover {
-        color: #3399FF
+        color: #28625E
         transition: color 300ms ease;
     }
 
@@ -94,7 +94,7 @@ export const NavLinks = styled(LinkScroll)`
     cursor: pointer;
 
     &:hover {
-        color: #3399FF;
+        color: #28625E;
         transition: 500ms ease-in-out;
 
     }
@@ -112,7 +112,7 @@ export const NavSocialLinks = styled.a`
     cursor: pointer;
 
     &:hover {
-        color: #d;
+        color: #dbdbdb;
         transition: 500ms ease-in-out;
 
     }

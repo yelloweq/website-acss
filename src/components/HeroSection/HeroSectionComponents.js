@@ -3,10 +3,11 @@ import styled from 'styled-components';
 export const HeroContainer = styled.div`
     display: block;
     margin-left: 20%;
+    margin-right: 20%;
     margin-bottom: 40rem;
     justify-content: left;
     flex-direction: column;
-    height: 80vh;
+    height: 50vh;
     position: relative;
     top: 200px;
     z-index: 1;
@@ -35,7 +36,7 @@ export const HeroContent = styled.div`
 
 export const HeroH1 = styled.h1`
     display: inline-block;
-    // margin-right: -8px;
+    margin-bottom: 0.5rem;
     // letter-spacing: -0.05rem;
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
@@ -74,7 +75,8 @@ export const HeroSpan = styled.span`
     color: ${props => props.SpanColor};
     font-size: ${props => props.spanSize};
     width: 100%;
-
+    margin-bottom: 0.5rem;
+    
 
 `
 export const HeroP = styled.p`
