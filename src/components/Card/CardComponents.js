@@ -1,9 +1,8 @@
 import styled from 'styled-components';
 
 export const CardContainer = styled.div`
-    display: block;
+    display: inline-block;
     position: relative;
-    top: 3rem;
     width: 300px;
     height: 500px;
     background: #fff;
@@ -11,7 +10,7 @@ export const CardContainer = styled.div`
     overflow: hidden;
     border-radius: 5px; 
     box-shadow: -5px 10px 26px -15px rgba(219, 219, 219, 0.8);
-
+    
 
 `
 

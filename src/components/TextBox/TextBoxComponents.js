@@ -5,7 +5,6 @@ export const TextBoxContainer = styled.div`
     display: flex;
     position: relative;
     font-size: 18px;
-    top: 50px;
     border: 3px solid #dbdbdbdb;
     border-radius: 10px;
     background: transparent;
