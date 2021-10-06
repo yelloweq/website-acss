@@ -73,6 +73,20 @@ function Home() {
 
 
                     </Card>
+
+                    <Card title="Aston Hack" date="12/11/21" img={image} >
+                        Hackathons are invention marathons where attendees dream up and bring to life ideas for apps, websites, robots, and more.
+                        We are inviting students to join us for 24 hours while we develop the ideas for the future!
+
+
+                    </Card>
+
+                    <Card title="Aston Hack" date="12/11/21" img={image} >
+                        Hackathons are invention marathons where attendees dream up and bring to life ideas for apps, websites, robots, and more.
+                        We are inviting students to join us for 24 hours while we develop the ideas for the future!
+
+
+                    </Card>
                    
                     
                     

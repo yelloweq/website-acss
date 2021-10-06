@@ -1,10 +1,9 @@
 import React from 'react';
-import { HeroContainer, HeroBg, HeroContent, HeroH1, HeroSpan, HeroTitle } from './HeroSectionComponents.js'
+import { HeroContainer, HeroContent, HeroH1, HeroSpan, HeroTitle } from './HeroSectionComponents.js'
 
 function HeroSection(props) {
     return (
         <HeroContainer>
-            <HeroBg bgColor={props.bg} />
             <HeroTitle>
                 <HeroH1 color={props.titleColor} size={props.titleSize}>{props.title}</HeroH1><HeroH1 color={props.suffixColor} size={props.suffixSize}>{props.suffix}</HeroH1>
             </HeroTitle>
