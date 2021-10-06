@@ -4,7 +4,7 @@ export const CardContainer = styled.div`
     display: inline-block;
     position: relative;
     width: 300px;
-    height: 500px;
+    height: auto;
     background: #fff;
     position: relative;
     overflow: hidden;
@@ -18,7 +18,7 @@ export const CardTitle = styled.h2`
     font-size: 30px;
     color: #3399ff;
     font-weight: 700;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 
 `
 
@@ -53,4 +53,8 @@ export const ImageContainer = styled.div`
     height: 200px;
     width: 100%;
     overflow: hidden;
+`
+
+export const CardText = styled.div`
+    font-weight: 500;
 `

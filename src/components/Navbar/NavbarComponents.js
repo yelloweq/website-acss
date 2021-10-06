@@ -98,6 +98,10 @@ export const NavLinks = styled(LinkScroll)`
         transition: 500ms ease-in-out;
 
     }
+
+    &:active {
+        color: #000;
+    }
    
 `
 

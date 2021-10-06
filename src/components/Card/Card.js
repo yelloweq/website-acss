@@ -1,5 +1,5 @@
 import React from 'react';
-import { CardContainer, CardTitle, CardDate, CardContent, CardImage, ImageContainer } from './CardComponents.js';
+import { CardContainer, CardTitle, CardDate, CardContent, CardImage, ImageContainer, CardText } from './CardComponents.js';
 
 function Card(props) {
     return (
@@ -18,8 +18,9 @@ function Card(props) {
                     {props.title}
                 </CardTitle>
 
+                <CardText>
                 {props.children}
-                
+                </CardText>
             </CardContent>
         </CardContainer>
     )
