@@ -170,7 +170,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@Iwus237](https://twitter.com/Iwus237) - iwo.grzes237@gmail.com
+Iwo Grzes - [@Iwus237](https://twitter.com/Iwus237) - iwo.grzes237@gmail.com
 
 Project Link: [https://github.com/yelloweq/website-acss](https://github.com/yelloweq/website-acss)
 
