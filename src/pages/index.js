@@ -38,7 +38,9 @@ function Home() {
 
                         We are the student Computer Science society at Aston University. We run social and tech events, open to all. You don’t need to be studying CS to be a part of the society, nor do you need any technical experience. We’re all about learning and sharing ideas!
                         
-                        <br /> <br />
+                        <br />
+                        <br />
+                        <br />
 
                         Like our Facebook page and join our Facebook group, where we post about events and hold member discussions. Check us out on Twitter too!
                         
@@ -60,33 +62,14 @@ function Home() {
                     SpanSize="20px"
                     SpanText="With amazing opportunities to win prizes and more!"
                 >
-                    <Card title="Aston Hack" date="12/11/21" img={image} >
+                    <Card title="Aston Hack" date="11/12/21" img={image} >
                         Hackathons are invention marathons where attendees dream up and bring to life ideas for apps, websites, robots, and more.
                         We are inviting students to join us for 24 hours while we develop the ideas for the future!
 
 
                     </Card>
 
-                    <Card title="Aston Hack" date="12/11/21" img={image} >
-                        Hackathons are invention marathons where attendees dream up and bring to life ideas for apps, websites, robots, and more.
-                        We are inviting students to join us for 24 hours while we develop the ideas for the future!
-
-
-                    </Card>
-
-                    <Card title="Aston Hack" date="12/11/21" img={image} >
-                        Hackathons are invention marathons where attendees dream up and bring to life ideas for apps, websites, robots, and more.
-                        We are inviting students to join us for 24 hours while we develop the ideas for the future!
-
-
-                    </Card>
-
-                    <Card title="Aston Hack" date="12/11/21" img={image} >
-                        Hackathons are invention marathons where attendees dream up and bring to life ideas for apps, websites, robots, and more.
-                        We are inviting students to join us for 24 hours while we develop the ideas for the future!
-
-
-                    </Card>
+                    
                    
                     
                     
@@ -105,7 +88,7 @@ function Home() {
 
                     <TextBox>
 
-                        Become a member by joining the society via Aston SU. It costs £2 for the whole year.
+                        Become a member by joining the society via <a href="https://www.astonsu.com/society/computerscience/">Aston SU</a>. It costs £2 for the whole year.
 
                     </TextBox>
 
