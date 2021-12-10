@@ -12,6 +12,7 @@ export const TextBoxContainer = styled.div`
     padding: 1rem;
     box-shadow: -5px 10px 26px -15px rgba(219, 219, 219, 0.8);
 
+    
 
 `
 
