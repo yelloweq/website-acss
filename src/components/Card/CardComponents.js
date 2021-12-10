@@ -9,7 +9,13 @@ export const CardContainer = styled.div`
     position: relative;
     overflow: hidden;
     border-radius: 5px; 
-    box-shadow: -5px 10px 26px -15px rgba(219, 219, 219, 0.8);
+    box-shadow: 0px 10px 35px -10px rgba(219, 219, 219, 0.8);
+    transition: .2s;
+
+    &:hover{
+        box-shadow: 0px 10px 50px -10px rgba(219, 219, 219, 1);
+        
+    }
     
 
 `

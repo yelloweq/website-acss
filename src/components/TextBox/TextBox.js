@@ -1,11 +1,13 @@
 import React from 'react';
-import { TextBoxContainer } from './TextBoxComponents.js';
+import { TextBoxContainer, TextWrapper } from './TextBoxComponents.js';
 
 function TextBox(props) {
     return (
 
         <TextBoxContainer>
-           {props.children}
+            <TextWrapper>
+                {props.children}
+            </TextWrapper>
         </TextBoxContainer>
 
     )

@@ -5,7 +5,7 @@ import Sidebar from '../components/Sidebar/Sidebar.js';
 import Card from '../components/Card/Card.js';
 import image from '../resources/images/card.png';
 import TextBox from '../components/TextBox/TextBox.js';
-
+import { Link } from './homeComponents.js';
 
 function Home() {
 
@@ -62,13 +62,14 @@ function Home() {
                     SpanSize="20px"
                     SpanText="With amazing opportunities to win prizes and more!"
                 >
+                    <a href="https://astonhack.co.uk">
                     <Card title="Aston Hack" date="11/12/21" img={image} >
                         Hackathons are invention marathons where attendees dream up and bring to life ideas for apps, websites, robots, and more.
                         We are inviting students to join us for 24 hours while we develop the ideas for the future!
 
 
                     </Card>
-
+                    </a>
                     
                    
                     
@@ -88,7 +89,10 @@ function Home() {
 
                     <TextBox>
 
-                        Become a member by joining the society via <a href="https://www.astonsu.com/society/computerscience/">Aston SU</a>. It costs £2 for the whole year.
+                        Become a member by joining the society via <Link href="https://www.astonsu.com/society/computerscience/">Aston SU</Link>. It only costs £2 for the whole year!
+                        <br />
+                        <br />
+                        If you have any questions about our society, feel free to contact us at: <br /> <Link href="mailto:compsci.society@union.aston.ac.uk">compsci.society@union.aston.ac.uk</Link>
 
                     </TextBox>
 
